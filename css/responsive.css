@@ -1,0 +1,250 @@
+@import url('./styles.css');
+@media screen and (max-width:1204px){
+	#contact div{flex-direction: column;}	
+}
+
+@media screen and (max-width:1024px){
+	header{
+		height:45px;
+	}
+	header nav{
+		margin-top:10px;
+		margin-right: 0;
+	}
+	header .logo img{
+		width: 120px;
+	}
+    nav {text-decoration: none;}
+	nav ul li a{
+		font-size:12px;
+	}
+	#home{
+		background-image: url("../img/background.jpg");
+	}
+	#home h1{
+		font-size:40px;	
+	}
+	#home h2{
+		font-size:20px;
+	}
+	h3{padding-top:12px;}
+	.btn{
+		margin-top: 400px;
+	}
+
+	#about p{
+		width:80%;
+	}
+	.aboutInner{
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+	}
+	.serviceInner{
+		margin-top: 5px;
+		margin-bottom: 50px;
+
+	}
+	#services .service_content{
+		position: relative;
+		padding: 20px;
+		transition: 0.5s;
+	}
+	#services .service_content .service_text{
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#services .service_content .service_text h5{
+
+		font-size: 16px;
+	}
+	.containborder{
+		border-right-style: none;
+	}
+	.mt-3{
+		margin-top:0px!important;
+	}
+	
+	/*#icerik{
+		flex-direction:column;
+	}*/
+	#mail{
+		width:auto;
+        margin: 0 5% 0 5%;
+	}
+	form input[type=text], form textarea{
+		width:80%;
+	}
+	form input[type=button],input[type=submit],input[type=reset], form a{
+		width:100px;
+	}
+	
+	#check{
+		width: 28px;
+		height: 10px;
+	}
+	#check:before{
+		width: 14px;
+		height: 10px;
+	}
+	#check:checked:before{
+		left:14px;
+	  }
+	label{
+		font-size: 10px;
+	}
+	.col-lg-4 {
+		flex: 0 0 auto;
+		width: 50%!important;
+	}
+
+}
+
+
+@media screen and (max-width:805px){
+	header{
+		height:70px;
+	}
+	
+	header .logo img{
+		width: 200px;
+		margin-top: 5px;
+		margin-left:25px;
+	}
+	header nav{
+		margin:0;
+		margin-right: 30px;
+		float:none;
+        text-decoration: none;
+	}
+	
+	nav ul{
+		width: auto;
+		height: auto;
+		text-align: center;
+		float: none;
+		display: flex;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top:65px;
+		bottom: 100%;
+		overflow: hidden;
+		flex-direction: column;
+		transition: all .5s ease-in-out;
+	}
+	nav ul li{
+		align-items: center;
+		border-top: solid 1px #fff;
+		background-color: rgba(0,0,0,.7);
+		margin: 0;
+	}
+	nav ul li a{
+		margin: 10px;
+		color: #fff;
+		font-size: 14px;
+	}
+	nav ul li span{
+		margin: 10px;
+		color: #fff;
+		font-size: 14px;
+	}
+
+	nav ul:hover li a{
+		transform:scale(1);
+		opacity: 10;
+		filter: blur(0);
+	}
+	 nav ul li a:hover{
+		transform:scale(1);
+		opacity: 10;
+		filter: blur(0);
+	 }
+	 nav ul li:hover{
+		background-color:#eee;
+	 }
+
+	header :checked ~ nav ul{
+		bottom: 0;
+	}
+	nav .icon-burger{
+		display: block;
+		
+	}
+
+	header .logo {
+		margin-top: 5px;
+		width: auto;
+	}
+
+	nav .lang-toggle{
+		margin-top:20px;
+		/*padding-right: 15px;*/
+	}
+
+	#home{
+		background-image: url("../img/background-mobil.jpg");
+	}
+	#home h1{
+		font-size:30px;
+		
+	}
+	#home h2{
+		font-size:15px;
+	}
+	.btn{
+		margin-top: 400px;
+	}
+
+	#about img{
+		width:105px;
+		height:auto;
+	}
+	.aboutInner{
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+	}
+	.serviceInner{
+		margin-top: 5px;
+		margin-bottom: 50px;
+
+	}
+	.col-lg-4 {
+		flex: 0 0 auto;
+		width: 100%!important;
+	}
+
+	#services .service_content{
+		position: relative;
+		padding: 20px;
+		transition: 0.5s;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	#portfolyo div{flex-direction: column;}
+	#portfolyo .main-column{margin-left: auto; margin-right: auto;}
+	#portfolyo .col-3{width: 100%;}
+	#portfolyo .pro_content .pro_text h5{
+		text-align: center;
+	}
+	
+	#mail{
+		width:auto;
+		margin:0 1% 0 1%;
+	}
+	#contact div{flex-direction: column;}
+	form input[type=text], form textarea{
+		width:75%;
+	}
+	form input[type=button],input[type=submit],input[type=reset],form a{
+		width:100px;
+	}
+	footer p{
+		font-size:12px;
+	}
+}
